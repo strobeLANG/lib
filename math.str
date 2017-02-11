@@ -20,6 +20,29 @@
 		proc_Mul($a,$b);
 		return $x0;
 	}
+	function Fac($a)
+	{
+	$r = new(1);
+
+  if($a > 0)
+	{
+		$b = $a;
+		while($b > 1)
+    {
+			$r = Mul($r,$b);
+			$b = Sub($b,1);
+    }
+	}
+
+	return $r;
+	}
+	function Pi()
+	{
+		// note this is not true PI
+	  // cant be an Integer???
+	  $pi = new("3.1415926535897932384626433832795");
+	  return $pi;
+	}
 	function Write($x1)
 	{
 		$x2 = new(1);
