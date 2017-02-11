@@ -39,7 +39,7 @@
 	function Pi()
 	{
 		// note this is not true PI
-	  // cant be an Integer
+	  // cant be an Integer???
 	  $pi = new("3.1415926535897932384626433832795");
 	  return $pi;
 	}
