@@ -20,19 +20,26 @@
 		proc_Mul($a,$b);
 		return $x0;
 	}
-	function Fac($a)
-	{
-	$r = new(1);
+	//This does not work
+	//function Fac($a)
+	//{
+	//$r = new(1);
 
-  if($a > 0)
-	{
-		$b = $a;
-		while($b > 1)
-    {
-			$r = Mul($r,$b);
-			$b = Sub($b,1);
-    }
-	}
+  //if($a > 0)
+	//{
+	//	$b = get($a);
+	//	$loop = new(true);
+	//	label($FacLoop);
+  //          Mul($r,$b);
+	//		$r = get($x0);
+	//		Sub($b,1);
+	//		$b = get($x0);
+	//	if($b > 1)
+	//	{
+  //  	$loop = new(false);
+  //  }
+	//	goto($FacLoop,$loop);
+	//}
 
 	return $r;
 	}
@@ -43,6 +50,14 @@
 	  $pi = new("3.1415926535897932384626433832795");
 	  return $pi;
 	}
+	function E()
+	{
+		// note this is not true Euler's number
+		// cant be an Integer???
+		$e = new("2.7182818284590452353602874713527");
+		return $e;
+	}
+
 	function Write($x1)
 	{
 		$x2 = new(1);
