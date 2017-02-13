@@ -20,21 +20,53 @@
 		proc_Mul($a,$b);
 		return $x0;
 	}
+
+	//This does not work
 	function Fac($a)
 	{
 	$r = new(1);
-
   if($a > 0)
 	{
-		$b = $a;
-		while($b > 1)
-    {
+		$b = get($a);
+		$loop = new(true);
+		While($Loop){
 			$r = Mul($r,$b);
 			$b = Sub($b,1);
+		if($b < 1)
+		{
+    	$loop = new(false);
     }
+		}
 	}
 
+	//This does not work
+	function Pow($a,$b)
+	{
+	$r = new(1);
+	if($a > 0)
+	{
+		$loop = new(true);
+		While($Loop){
+			$r = Mul($r,$a);
+			$b = Sub($b,1);
+		if($b > 0)
+		{
+			$loop = new(false);
+		}
+		}
+	}
 	return $r;
+	}
+
+	function Abs($a)
+	{
+		$r = new($a);
+		if($r < 0)
+		{
+			$r = Mul($r,-1);
+		}
+		return $r;
+
 	}
 	function Pi()
 	{
@@ -43,6 +75,14 @@
 	  $pi = new("3.1415926535897932384626433832795");
 	  return $pi;
 	}
+	function E()
+	{
+		// note this is not true Euler's number
+		// cant be an Integer???
+		$e = new("2.7182818284590452353602874713527");
+		return $e;
+	}
+
 	function Write($x1)
 	{
 		$x2 = new(1);

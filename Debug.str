@@ -1,0 +1,34 @@
+#include <bioslib.str>
+namespace Debug
+{
+
+ function DebugStart($File)
+ {
+ $logFile = get($File);
+ $2d454 = new(true);
+ if(Sustem.FileExsists($File))
+ {
+   Log("-_-_-_-_-_-_-_-_-_-_-_-");
+ }
+ else
+ {
+ System.WriteFile($File,"");
+ }
+ Log("Log Start");
+ }
+
+ function Log($msg)
+ {
+  if($2d454)
+  {
+  System.AppendFile($logFile, $msg);
+  }
+ }
+
+ function DebugStop()
+ {
+ Log("Log End");
+ $2d454 = new(false);
+ }
+
+}
