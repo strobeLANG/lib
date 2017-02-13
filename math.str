@@ -20,28 +20,53 @@
 		proc_Mul($a,$b);
 		return $x0;
 	}
+
 	//This does not work
-	//function Fac($a)
-	//{
-	//$r = new(1);
+	function Fac($a)
+	{
+	$r = new(1);
+  if($a > 0)
+	{
+		$b = get($a);
+		$loop = new(true);
+		While($Loop){
+			$r = Mul($r,$b);
+			$b = Sub($b,1);
+		if($b < 1)
+		{
+    	$loop = new(false);
+    }
+		}
+	}
 
-  //if($a > 0)
-	//{
-	//	$b = get($a);
-	//	$loop = new(true);
-	//	label($FacLoop);
-  //          Mul($r,$b);
-	//		$r = get($x0);
-	//		Sub($b,1);
-	//		$b = get($x0);
-	//	if($b > 1)
-	//	{
-  //  	$loop = new(false);
-  //  }
-	//	goto($FacLoop,$loop);
-	//}
-
+	//This does not work
+	function Pow($a,$b)
+	{
+	$r = new(1);
+	if($a > 0)
+	{
+		$loop = new(true);
+		While($Loop){
+			$r = Mul($r,$a);
+			$b = Sub($b,1);
+		if($b > 0)
+		{
+			$loop = new(false);
+		}
+		}
+	}
 	return $r;
+	}
+
+	function Abs($a)
+	{
+		$r = new($a);
+		if($r < 0)
+		{
+			$r = Mul($r,-1);
+		}
+		return $r;
+
 	}
 	function Pi()
 	{
