@@ -14,6 +14,7 @@ namespace Debug
  {
  System.WriteFile($File,"");
  }
+ Log("Log Start");
  }
 
  function Log($msg)
@@ -26,7 +27,8 @@ namespace Debug
 
  function DebugStop()
  {
-$2d454 = new(false);
+ Log("Log End");
+ $2d454 = new(false);
  }
 
 }
