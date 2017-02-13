@@ -6,8 +6,14 @@ namespace Debug
  {
  $logFile = get($File);
  $2d454 = new(true);
+ if(Sustem.FileExsists($File))
+ {
+   Log("-_-_-_-_-_-_-_-_-_-_-_-");
+ }
+ else
+ {
  System.WriteFile($File,"");
-
+ }
  }
 
  function Log($msg)
