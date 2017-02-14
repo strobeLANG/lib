@@ -6,7 +6,7 @@ namespace Debug
  {
  $logFile = get($File);
  $2d454 = new(true);
- if(Sustem.FileExsists($File))
+ if(System.FileExsists($File))
  {
    Log("-_-_-_-_-_-_-_-_-_-_-_-");
  }
