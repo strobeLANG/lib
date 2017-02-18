@@ -1,10 +1,10 @@
 namespace System
 {
-	function Exit($x1)
+	function Exit(*1)
 	{
 		int(0);
 	}
-	function Write($x1)
+	function Write(*1)
 	{
 		int(1);
 		int(2);
@@ -12,50 +12,50 @@ namespace System
 	function Read()
 	{
 		int(3);
-		return $x0;
+		return *0;
 	}
 	function ReadLine()
 	{
 		int(4);
-		return $x0;
+		return *0;
 	}
 	function ReadKey()
 	{
 		int(5);
-		return $x0;
+		return *0;
 	}
-	function ReadFile($x1)
+	function ReadFile(*1)
 	{
 		int(6);
-		return $x0;
+		return *0;
 	}
-	function WriteFile($x1, $x2)
+	function WriteFile(*1, *2)
 	{
 		int(7);
 	}
-	function AppendFile($x1, $x2)
+	function AppendFile(*1, *2)
 	{
 		int(8);
 	}
-	function CreateFolder($x1)
+	function CreateFolder(*1)
 	{
 		int(9);
 	}
-	function FileExsists($x1)
+	function FileExsists(*1)
 	{
 		int(10);
-		return $x0;
+		return *0;
 	}
-	function FolderExsists($x1)
+	function FolderExsists(*1)
 	{
 		int(11);
-		return $x0;
+		return *0;
 	}
-	function DeleteFile($x1)
+	function DeleteFile(*1)
 	{
 		int(12);
 	}
-	function DeleteFolder($x1)
+	function DeleteFolder(*1)
 	{
 		int(13);
 	}
