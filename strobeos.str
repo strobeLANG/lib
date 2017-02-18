@@ -31,3 +31,45 @@ namespace Users
 		int(18);
 	}
 }
+namespace Kernel
+{
+	function GetInfo(*1)
+	{
+		// *1 is the number of the value.
+		int(20);
+		return *0;
+	}
+	function Try(*15)
+	{
+		// *15 is the interrupt byte.
+		int(22);
+		return *0;
+	}
+}
+namespace Process
+{
+	function Start(*1)
+	{
+		// *1 is the DIF file location.
+		*2 = Kernel.GetInfo(1); // To get the memory size
+		int(21);
+		return *0;
+	}
+	function Kill(*1)
+	{
+		// *1 is the process ID.
+		int(23);
+	}
+	function GetUser(*1)
+	{
+		// *1 is the process ID.
+		*2 = new(0);
+		int(24);
+	}
+	function GetExecutable(*1)
+	{
+		// *1 is the process ID.
+		*2 = new(1);
+		int(24);
+	}
+}
