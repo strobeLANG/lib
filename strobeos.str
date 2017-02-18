@@ -46,6 +46,31 @@ namespace Kernel
 		return *0;
 	}
 }
+namespace Screen
+{
+	function BackgroundColor(*2)
+	{
+		// *2 is the color code.
+		*1 = new(0);
+		int(25);
+	}
+	function ForegroundColor(*2)
+	{
+		// *2 is the color code.
+		*1 = new(1);
+		int(25);
+	}
+	function ResetColor()
+	{
+		*1 = new(1);
+		int(26);
+	}
+	function Clear()
+	{
+		*1 = new(0);
+		int(26);
+	}
+}
 namespace Process
 {
 	function Start(*1)
@@ -65,11 +90,13 @@ namespace Process
 		// *1 is the process ID.
 		*2 = new(0);
 		int(24);
+		return *0;
 	}
 	function GetExecutable(*1)
 	{
 		// *1 is the process ID.
 		*2 = new(1);
 		int(24);
+		return *0;
 	}
 }
