@@ -2,25 +2,25 @@ namespace Users
 {
 	function CurrentUsername()
 	{
-		int(14);
+		int(15);
 		return *0;
 	}
 	function CurrentUserID()
 	{
 		*1 = CurrentUsername();
-		int(15);
+		int(16);
 		return *0;
 	}
 	function UserID(*1)
 	{
 		// *1 is username
-		int(15);
+		int(16);
 		return *0;
 	}
 	function Username(*1)
 	{
 		// *1 is user ID
-		int(16);
+		int(17);
 		return *0;
 	}
 	function ChangePassword(*1, *2, *3)
@@ -28,6 +28,6 @@ namespace Users
 		// *1 is user ID
 		// *2 is old password
 		// *3 is new password
-		int(17);
+		int(18);
 	}
 }
