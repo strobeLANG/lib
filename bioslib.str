@@ -59,4 +59,9 @@ namespace System
 	{
 		int(13);
 	}
+	function ReadPassword()
+	{
+		int(14);
+		return *0;
+	}
 }
