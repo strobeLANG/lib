@@ -1,24 +1,24 @@
-﻿namespace Math
+namespace Math
 {
 	function Add($a, $b)
 	{
 		proc_Add($a,$b);
-		return $x0;
+		return *0;
 	}
 	function Sub($a, $b)
 	{
 		proc_Sub($a,$b);
-		return $x0;
+		return *0;
 	}
 	function Div($a,$b)
 	{
 		proc_Div($a,$b);
-		return $x0;
+		return *0;
 	}
 	function Mul($a,$b)
 	{
 		proc_Mul($a,$b);
-		return $x0;
+		return *0;
 	}
 
 	//This does not work
@@ -83,11 +83,11 @@
 		return $e;
 	}
 
-	function Write($x1)
+	function Write(*1)
 	{
-		$x2 = new(1);
+		*2 = new(1);
 		int(1);
 		int(2);
-		clear($x2);
+		clear(*2);
 	}
 }

@@ -15,5 +15,4 @@ If you made a library, feel free to contribute it.
 * Create a pull request to contribute your library;
 
 ### Creating APIs
-We recommend building your API in C++ (if the `strcpp` project is done by the time you are reading this), and if it works perfectly then also making it for C#. 
-When you are trying to contribute it, make sure it is available for both platforms.
+For now, don't create APIs!
